@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		428E3860203C8ACD0001C520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E385F203C8ACD0001C520 /* AppDelegate.swift */; };
+		428E3862203C8ACD0001C520 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 428E3861203C8ACD0001C520 /* art.scnassets */; };
+		428E3864203C8ACD0001C520 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3863203C8ACD0001C520 /* ViewController.swift */; };
+		428E3867203C8ACD0001C520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428E3865203C8ACD0001C520 /* Main.storyboard */; };
+		428E3869203C8ACF0001C520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428E3868203C8ACF0001C520 /* Assets.xcassets */; };
+		428E386C203C8ACF0001C520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428E386A203C8ACF0001C520 /* LaunchScreen.storyboard */; };
+		428E3875203C8C0D0001C520 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E3874203C8C0D0001C520 /* opencv2.framework */; };
+		428E387C203C8C250001C520 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 428E387B203C8C250001C520 /* OpenCVWrapper.mm */; };
+		428E387F203C8CD00001C520 /* CVUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 428E387D203C8CD00001C520 /* CVUtils.mm */; };
+		428E3884203C8E190001C520 /* VertBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3881203C8E190001C520 /* VertBrush.swift */; };
+		428E3885203C8E190001C520 /* MetalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3882203C8E190001C520 /* MetalScene.swift */; };
+		428E3886203C8E190001C520 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3883203C8E190001C520 /* Vertex.swift */; };
+		428E388A203C8E5C0001C520 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3887203C8E5C0001C520 /* Light.swift */; };
+		428E388B203C8E5C0001C520 /* BufferProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3888203C8E5C0001C520 /* BufferProvider.swift */; };
+		428E388C203C8E5C0001C520 /* float4x4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3889203C8E5C0001C520 /* float4x4+Extensions.swift */; };
+		428E3890203C8EC50001C520 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E388D203C8EC50001C520 /* SCNVector3+Extensions.swift */; };
+		428E3891203C8EC50001C520 /* SCNVector4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E388E203C8EC50001C520 /* SCNVector4+Extensions.swift */; };
+		428E3892203C8EC50001C520 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E388F203C8EC50001C520 /* SCNNode+Extensions.swift */; };
+		428E3894203C8F3C0001C520 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E3893203C8F3B0001C520 /* Accelerate.framework */; };
+		428E3896203C93B50001C520 /* BrushShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 428E3895203C93B50001C520 /* BrushShaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		428E385C203C8ACD0001C520 /* ARKitMarker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitMarker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		428E385F203C8ACD0001C520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		428E3861203C8ACD0001C520 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		428E3863203C8ACD0001C520 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		428E3866203C8ACD0001C520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		428E3868203C8ACF0001C520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		428E386B203C8ACF0001C520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		428E386D203C8ACF0001C520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		428E3874203C8C0D0001C520 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ARKitMarker/Frameworks/opencv2.framework; sourceTree = "<group>"; };
+		428E3876203C8C1B0001C520 /* ARKitMarker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARKitMarker-Bridging-Header.h"; sourceTree = "<group>"; };
+		428E387A203C8C250001C520 /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		428E387B203C8C250001C520 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		428E387D203C8CD00001C520 /* CVUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVUtils.mm; sourceTree = "<group>"; };
+		428E387E203C8CD00001C520 /* CVUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVUtils.h; sourceTree = "<group>"; };
+		428E3881203C8E190001C520 /* VertBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VertBrush.swift; sourceTree = "<group>"; };
+		428E3882203C8E190001C520 /* MetalScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalScene.swift; sourceTree = "<group>"; };
+		428E3883203C8E190001C520 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		428E3887203C8E5C0001C520 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		428E3888203C8E5C0001C520 /* BufferProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferProvider.swift; sourceTree = "<group>"; };
+		428E3889203C8E5C0001C520 /* float4x4+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "float4x4+Extensions.swift"; sourceTree = "<group>"; };
+		428E388D203C8EC50001C520 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		428E388E203C8EC50001C520 /* SCNVector4+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector4+Extensions.swift"; sourceTree = "<group>"; };
+		428E388F203C8EC50001C520 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		428E3893203C8F3B0001C520 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		428E3895203C93B50001C520 /* BrushShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BrushShaders.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		428E3859203C8ACD0001C520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E3894203C8F3C0001C520 /* Accelerate.framework in Frameworks */,
+				428E3875203C8C0D0001C520 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		428E3853203C8ACD0001C520 = {
+			isa = PBXGroup;
+			children = (
+				428E385E203C8ACD0001C520 /* ARKitMarker */,
+				428E385D203C8ACD0001C520 /* Products */,
+				428E3873203C8C0D0001C520 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		428E385D203C8ACD0001C520 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428E385C203C8ACD0001C520 /* ARKitMarker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428E385E203C8ACD0001C520 /* ARKitMarker */ = {
+			isa = PBXGroup;
+			children = (
+				428E385F203C8ACD0001C520 /* AppDelegate.swift */,
+				428E3861203C8ACD0001C520 /* art.scnassets */,
+				428E3863203C8ACD0001C520 /* ViewController.swift */,
+				428E3880203C8E190001C520 /* Drawing */,
+				428E3879203C8C250001C520 /* Utils */,
+				428E3865203C8ACD0001C520 /* Main.storyboard */,
+				428E3868203C8ACF0001C520 /* Assets.xcassets */,
+				428E386A203C8ACF0001C520 /* LaunchScreen.storyboard */,
+				428E386D203C8ACF0001C520 /* Info.plist */,
+				428E3876203C8C1B0001C520 /* ARKitMarker-Bridging-Header.h */,
+			);
+			path = ARKitMarker;
+			sourceTree = "<group>";
+		};
+		428E3873203C8C0D0001C520 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				428E3893203C8F3B0001C520 /* Accelerate.framework */,
+				428E3874203C8C0D0001C520 /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		428E3879203C8C250001C520 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				428E387E203C8CD00001C520 /* CVUtils.h */,
+				428E387D203C8CD00001C520 /* CVUtils.mm */,
+				428E387A203C8C250001C520 /* OpenCVWrapper.h */,
+				428E387B203C8C250001C520 /* OpenCVWrapper.mm */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		428E3880203C8E190001C520 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				428E3895203C93B50001C520 /* BrushShaders.metal */,
+				428E388F203C8EC50001C520 /* SCNNode+Extensions.swift */,
+				428E388D203C8EC50001C520 /* SCNVector3+Extensions.swift */,
+				428E388E203C8EC50001C520 /* SCNVector4+Extensions.swift */,
+				428E3888203C8E5C0001C520 /* BufferProvider.swift */,
+				428E3889203C8E5C0001C520 /* float4x4+Extensions.swift */,
+				428E3887203C8E5C0001C520 /* Light.swift */,
+				428E3881203C8E190001C520 /* VertBrush.swift */,
+				428E3882203C8E190001C520 /* MetalScene.swift */,
+				428E3883203C8E190001C520 /* Vertex.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		428E385B203C8ACD0001C520 /* ARKitMarker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428E3870203C8ACF0001C520 /* Build configuration list for PBXNativeTarget "ARKitMarker" */;
+			buildPhases = (
+				428E3858203C8ACD0001C520 /* Sources */,
+				428E3859203C8ACD0001C520 /* Frameworks */,
+				428E385A203C8ACD0001C520 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARKitMarker;
+			productName = ARKitMarker;
+			productReference = 428E385C203C8ACD0001C520 /* ARKitMarker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428E3854203C8ACD0001C520 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Laan Labs";
+				TargetAttributes = {
+					428E385B203C8ACD0001C520 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = 428E3857203C8ACD0001C520 /* Build configuration list for PBXProject "ARKitMarker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 428E3853203C8ACD0001C520;
+			productRefGroup = 428E385D203C8ACD0001C520 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				428E385B203C8ACD0001C520 /* ARKitMarker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		428E385A203C8ACD0001C520 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E3862203C8ACD0001C520 /* art.scnassets in Resources */,
+				428E386C203C8ACF0001C520 /* LaunchScreen.storyboard in Resources */,
+				428E3869203C8ACF0001C520 /* Assets.xcassets in Resources */,
+				428E3867203C8ACD0001C520 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		428E3858203C8ACD0001C520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E388B203C8E5C0001C520 /* BufferProvider.swift in Sources */,
+				428E3896203C93B50001C520 /* BrushShaders.metal in Sources */,
+				428E388A203C8E5C0001C520 /* Light.swift in Sources */,
+				428E387C203C8C250001C520 /* OpenCVWrapper.mm in Sources */,
+				428E388C203C8E5C0001C520 /* float4x4+Extensions.swift in Sources */,
+				428E3864203C8ACD0001C520 /* ViewController.swift in Sources */,
+				428E3891203C8EC50001C520 /* SCNVector4+Extensions.swift in Sources */,
+				428E3884203C8E190001C520 /* VertBrush.swift in Sources */,
+				428E3890203C8EC50001C520 /* SCNVector3+Extensions.swift in Sources */,
+				428E3860203C8ACD0001C520 /* AppDelegate.swift in Sources */,
+				428E3886203C8E190001C520 /* Vertex.swift in Sources */,
+				428E387F203C8CD00001C520 /* CVUtils.mm in Sources */,
+				428E3892203C8EC50001C520 /* SCNNode+Extensions.swift in Sources */,
+				428E3885203C8E190001C520 /* MetalScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		428E3865203C8ACD0001C520 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428E3866203C8ACD0001C520 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		428E386A203C8ACF0001C520 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428E386B203C8ACF0001C520 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		428E386E203C8ACF0001C520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		428E386F203C8ACF0001C520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		428E3871203C8ACF0001C520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34FWY7G2HB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARKitMarker/Frameworks",
+				);
+				INFOPLIST_FILE = ARKitMarker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = labs.laan.ARKitMarker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARKitMarker/ARKitMarker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		428E3872203C8ACF0001C520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34FWY7G2HB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARKitMarker/Frameworks",
+				);
+				INFOPLIST_FILE = ARKitMarker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = labs.laan.ARKitMarker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARKitMarker/ARKitMarker-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		428E3857203C8ACD0001C520 /* Build configuration list for PBXProject "ARKitMarker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428E386E203C8ACF0001C520 /* Debug */,
+				428E386F203C8ACF0001C520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428E3870203C8ACF0001C520 /* Build configuration list for PBXNativeTarget "ARKitMarker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428E3871203C8ACF0001C520 /* Debug */,
+				428E3872203C8ACF0001C520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 428E3854203C8ACD0001C520 /* Project object */;
+}
